@@ -1,0 +1,41 @@
+Train base model
+model: mobilenet_v2
+>>>>>>>>>>>>>>>>>>>>>>>>Normal Training>>>>>>>>>>>>>>>>>>>>>>>>
+Starting training for 200 epoch(s)
+Epoch 1/200, lr:0.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100% 391/391 [00:42<00:00,  9.18it/s, loss=4.166, lr=0.100000]
+- Train accuracy:  5.7140, training loss:  4.1666
+  0% 0/391 [00:00<?, ?it/s]
+
+  0% 0/391 [00:19<?, ?it/s]
+Checkpoint Directory exists!
+- Eval metrics, acc:7.0800, loss: 4.1650
+- Found new best accuracy
+Traceback (most recent call last):
+  File "main.py", line 306, in <module>
+    main()
+  File "main.py", line 301, in main
+    train_and_evaluate(model, train_dl, dev_dl, optimizer, loss_fn, params,
+  File "/content/drive/MyDrive/gradient/train_kd.py", line 256, in train_and_evaluate
+    wandb.log({"Training_accuracy": train_acc, "Train_loss": train_loss})
+NameError: name 'wandb' is not defined

@@ -1,0 +1,41 @@
+{
+    "os": "Linux-5.10.147+-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-03-07T07:24:46.195705",
+    "startedAt": "2023-03-07T07:24:38.390289",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--model_dir",
+        "experiments/base_experiments/base_mobilenetv2/"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/ismail31416/gradient",
+        "commit": "3f5c46fc911849bfbd08d34082a542d292953c1c"
+    },
+    "email": null,
+    "root": "/content/drive/MyDrive/gradient",
+    "host": "ab2338df2b6f",
+    "username": "root",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "disk": {
+        "total": 166.77415084838867,
+        "used": 25.781227111816406
+    },
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A100-SXM4-40GB",
+            "memory_total": 42949672960
+        }
+    ],
+    "memory": {
+        "total": 83.48344421386719
+    }
+}

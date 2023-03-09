@@ -1,0 +1,226 @@
+2023-03-04 05:22:45,240 INFO    StreamThr :23188 [internal.py:wandb_internal():87] W&B internal server running at pid: 23188, started at: 2023-03-04 05:22:45.237945
+2023-03-04 05:22:45,242 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: status
+2023-03-04 05:22:45,243 INFO    WriterThread:23188 [datastore.py:open_for_write():85] open: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/run-pvgnye87.wandb
+2023-03-04 05:22:45,272 DEBUG   SenderThread:23188 [sender.py:send():336] send: header
+2023-03-04 05:22:50,273 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: status_report
+2023-03-04 05:22:51,227 DEBUG   SenderThread:23188 [sender.py:send():336] send: run
+2023-03-04 05:22:51,748 INFO    SenderThread:23188 [dir_watcher.py:__init__():216] watching files in: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files
+2023-03-04 05:22:51,749 INFO    SenderThread:23188 [sender.py:_start_run_threads():1067] run started: pvgnye87 with start time 1677907365.236664
+2023-03-04 05:22:51,749 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: check_version
+2023-03-04 05:22:51,749 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: summary_record
+2023-03-04 05:22:51,752 INFO    SenderThread:23188 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-04 05:22:51,753 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: check_version
+2023-03-04 05:22:51,830 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: run_start
+2023-03-04 05:22:52,415 DEBUG   HandlerThread:23188 [system_info.py:__init__():31] System info init
+2023-03-04 05:22:52,415 DEBUG   HandlerThread:23188 [system_info.py:__init__():46] System info init done
+2023-03-04 05:22:52,416 INFO    HandlerThread:23188 [system_monitor.py:start():151] Starting system monitor
+2023-03-04 05:22:52,416 INFO    SystemMonitor:23188 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-03-04 05:22:52,416 INFO    HandlerThread:23188 [system_monitor.py:probe():172] Collecting system info
+2023-03-04 05:22:52,416 INFO    SystemMonitor:23188 [interfaces.py:start():168] Started cpu
+2023-03-04 05:22:52,417 INFO    SystemMonitor:23188 [interfaces.py:start():168] Started disk
+2023-03-04 05:22:52,418 INFO    SystemMonitor:23188 [interfaces.py:start():168] Started gpu
+2023-03-04 05:22:52,418 INFO    SystemMonitor:23188 [interfaces.py:start():168] Started memory
+2023-03-04 05:22:52,419 INFO    SystemMonitor:23188 [interfaces.py:start():168] Started network
+2023-03-04 05:22:52,428 DEBUG   HandlerThread:23188 [system_info.py:probe():195] Probing system
+2023-03-04 05:22:52,436 DEBUG   HandlerThread:23188 [system_info.py:_probe_git():180] Probing git
+2023-03-04 05:22:52,463 DEBUG   HandlerThread:23188 [system_info.py:_probe_git():188] Probing git done
+2023-03-04 05:22:52,463 DEBUG   HandlerThread:23188 [system_info.py:probe():241] Probing system done
+2023-03-04 05:22:52,463 DEBUG   HandlerThread:23188 [system_monitor.py:probe():181] {'os': 'Linux-5.10.147+-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2023-03-04T05:22:52.428455', 'startedAt': '2023-03-04T05:22:45.203281', 'docker': None, 'cuda': None, 'args': ('--model_dir', 'experiments/base_experiments/base_mobilenetv2/'), 'state': 'running', 'program': 'main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/ismail31416/gradient', 'commit': '3f5c46fc911849bfbd08d34082a542d292953c1c'}, 'email': None, 'root': '/content/drive/MyDrive/gradient', 'host': 'f86510633019', 'username': 'root', 'executable': '/usr/bin/python3', 'cpu_count': 4, 'cpu_count_logical': 8, 'disk': {'total': 166.77415084838867, 'used': 25.82352066040039}, 'gpu': 'Tesla T4', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla T4', 'memory_total': 16106127360}], 'memory': {'total': 51.00005340576172}}
+2023-03-04 05:22:52,463 INFO    HandlerThread:23188 [system_monitor.py:probe():182] Finished collecting system info
+2023-03-04 05:22:52,463 INFO    HandlerThread:23188 [system_monitor.py:probe():185] Publishing system info
+2023-03-04 05:22:52,463 DEBUG   HandlerThread:23188 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-04 05:22:52,467 DEBUG   HandlerThread:23188 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-04 05:22:52,470 INFO    HandlerThread:23188 [system_monitor.py:probe():187] Finished publishing system info
+2023-03-04 05:22:52,476 DEBUG   SenderThread:23188 [sender.py:send():336] send: files
+2023-03-04 05:22:52,477 INFO    SenderThread:23188 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2023-03-04 05:22:52,484 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-04 05:22:52,484 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: stop_status
+2023-03-04 05:22:52,721 DEBUG   SenderThread:23188 [sender.py:send():336] send: telemetry
+2023-03-04 05:22:52,751 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_created():275] file/dir created: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/requirements.txt
+2023-03-04 05:22:52,751 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_created():275] file/dir created: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/wandb-summary.json
+2023-03-04 05:22:52,752 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_created():275] file/dir created: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/wandb-metadata.json
+2023-03-04 05:22:52,752 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_created():275] file/dir created: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:22:53,128 INFO    wandb-upload_0:23188 [upload_job.py:push():138] Uploaded file /tmp/tmpwcsggjmewandb/srpc02y4-wandb-metadata.json
+2023-03-04 05:22:56,005 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: status_report
+2023-03-04 05:22:56,758 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:22:58,763 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:00,767 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:01,108 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: status_report
+2023-03-04 05:23:02,772 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:04,776 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:06,179 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: status_report
+2023-03-04 05:23:06,779 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:07,483 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-04 05:23:07,484 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-04 05:23:08,784 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:10,787 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:11,257 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: status_report
+2023-03-04 05:23:12,484 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-04 05:23:12,791 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:14,794 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:16,346 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: status_report
+2023-03-04 05:23:16,799 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/config.yaml
+2023-03-04 05:23:16,799 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:17,485 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-04 05:23:18,803 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:20,806 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:21,648 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: status_report
+2023-03-04 05:23:22,486 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-04 05:23:22,811 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:24,814 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:26,654 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: status_report
+2023-03-04 05:23:26,817 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:27,487 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-04 05:23:28,821 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:30,825 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:31,666 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: status_report
+2023-03-04 05:23:32,488 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-04 05:23:32,830 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:34,833 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:36,838 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:37,489 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-04 05:23:37,636 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: status_report
+2023-03-04 05:23:38,842 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:42,490 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-04 05:23:42,637 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: status_report
+2023-03-04 05:23:47,491 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-04 05:23:47,637 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: status_report
+2023-03-04 05:23:52,420 DEBUG   SystemMonitor:23188 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-03-04 05:23:52,421 DEBUG   SenderThread:23188 [sender.py:send():336] send: stats
+2023-03-04 05:23:52,492 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-04 05:23:53,422 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: status_report
+2023-03-04 05:23:56,880 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:57,493 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-04 05:23:58,500 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: status_report
+2023-03-04 05:23:58,520 DEBUG   SenderThread:23188 [sender.py:send():336] send: exit
+2023-03-04 05:23:58,521 INFO    SenderThread:23188 [sender.py:send_exit():559] handling exit code: 1
+2023-03-04 05:23:58,521 INFO    SenderThread:23188 [sender.py:send_exit():561] handling runtime: 66
+2023-03-04 05:23:58,524 INFO    SenderThread:23188 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-04 05:23:58,525 INFO    SenderThread:23188 [sender.py:send_exit():567] send defer
+2023-03-04 05:23:58,525 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: defer
+2023-03-04 05:23:58,525 INFO    HandlerThread:23188 [handler.py:handle_request_defer():170] handle defer: 0
+2023-03-04 05:23:58,525 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: defer
+2023-03-04 05:23:58,526 INFO    SenderThread:23188 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-03-04 05:23:58,526 INFO    SenderThread:23188 [sender.py:transition_state():587] send defer: 1
+2023-03-04 05:23:58,526 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: defer
+2023-03-04 05:23:58,526 INFO    HandlerThread:23188 [handler.py:handle_request_defer():170] handle defer: 1
+2023-03-04 05:23:58,526 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: defer
+2023-03-04 05:23:58,526 INFO    SenderThread:23188 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-03-04 05:23:58,526 INFO    SenderThread:23188 [sender.py:transition_state():587] send defer: 2
+2023-03-04 05:23:58,527 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: defer
+2023-03-04 05:23:58,527 INFO    HandlerThread:23188 [handler.py:handle_request_defer():170] handle defer: 2
+2023-03-04 05:23:58,527 INFO    HandlerThread:23188 [system_monitor.py:finish():161] Stopping system monitor
+2023-03-04 05:23:58,527 DEBUG   SystemMonitor:23188 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-03-04 05:23:58,528 DEBUG   SystemMonitor:23188 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-03-04 05:23:58,528 INFO    HandlerThread:23188 [interfaces.py:finish():175] Joined cpu
+2023-03-04 05:23:58,529 INFO    HandlerThread:23188 [interfaces.py:finish():175] Joined disk
+2023-03-04 05:23:58,537 INFO    HandlerThread:23188 [interfaces.py:finish():175] Joined gpu
+2023-03-04 05:23:58,537 INFO    HandlerThread:23188 [interfaces.py:finish():175] Joined memory
+2023-03-04 05:23:58,538 INFO    HandlerThread:23188 [interfaces.py:finish():175] Joined network
+2023-03-04 05:23:58,538 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: defer
+2023-03-04 05:23:58,538 INFO    SenderThread:23188 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-03-04 05:23:58,539 INFO    SenderThread:23188 [sender.py:transition_state():587] send defer: 3
+2023-03-04 05:23:58,539 DEBUG   SenderThread:23188 [sender.py:send():336] send: stats
+2023-03-04 05:23:58,539 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: defer
+2023-03-04 05:23:58,539 INFO    HandlerThread:23188 [handler.py:handle_request_defer():170] handle defer: 3
+2023-03-04 05:23:58,540 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: defer
+2023-03-04 05:23:58,540 INFO    SenderThread:23188 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-03-04 05:23:58,540 INFO    SenderThread:23188 [sender.py:transition_state():587] send defer: 4
+2023-03-04 05:23:58,540 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: defer
+2023-03-04 05:23:58,540 INFO    HandlerThread:23188 [handler.py:handle_request_defer():170] handle defer: 4
+2023-03-04 05:23:58,541 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: defer
+2023-03-04 05:23:58,541 INFO    SenderThread:23188 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-03-04 05:23:58,541 INFO    SenderThread:23188 [sender.py:transition_state():587] send defer: 5
+2023-03-04 05:23:58,541 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: defer
+2023-03-04 05:23:58,541 INFO    HandlerThread:23188 [handler.py:handle_request_defer():170] handle defer: 5
+2023-03-04 05:23:58,542 DEBUG   SenderThread:23188 [sender.py:send():336] send: summary
+2023-03-04 05:23:58,544 INFO    SenderThread:23188 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-04 05:23:58,545 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: defer
+2023-03-04 05:23:58,545 INFO    SenderThread:23188 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-03-04 05:23:58,545 INFO    SenderThread:23188 [sender.py:transition_state():587] send defer: 6
+2023-03-04 05:23:58,546 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: defer
+2023-03-04 05:23:58,546 INFO    HandlerThread:23188 [handler.py:handle_request_defer():170] handle defer: 6
+2023-03-04 05:23:58,546 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: defer
+2023-03-04 05:23:58,546 INFO    SenderThread:23188 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-03-04 05:23:58,546 INFO    SenderThread:23188 [sender.py:transition_state():587] send defer: 7
+2023-03-04 05:23:58,547 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: status_report
+2023-03-04 05:23:58,547 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: defer
+2023-03-04 05:23:58,547 INFO    HandlerThread:23188 [handler.py:handle_request_defer():170] handle defer: 7
+2023-03-04 05:23:58,547 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: defer
+2023-03-04 05:23:58,547 INFO    SenderThread:23188 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-03-04 05:23:58,883 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/wandb-summary.json
+2023-03-04 05:23:58,884 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:23:59,521 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-04 05:24:00,143 INFO    SenderThread:23188 [sender.py:transition_state():587] send defer: 8
+2023-03-04 05:24:00,143 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: poll_exit
+2023-03-04 05:24:00,143 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: defer
+2023-03-04 05:24:00,144 INFO    HandlerThread:23188 [handler.py:handle_request_defer():170] handle defer: 8
+2023-03-04 05:24:00,144 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: defer
+2023-03-04 05:24:00,144 INFO    SenderThread:23188 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-03-04 05:24:00,155 INFO    SenderThread:23188 [sender.py:transition_state():587] send defer: 9
+2023-03-04 05:24:00,156 DEBUG   SenderThread:23188 [sender.py:send():336] send: artifact
+2023-03-04 05:24:00,156 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: defer
+2023-03-04 05:24:00,158 INFO    HandlerThread:23188 [handler.py:handle_request_defer():170] handle defer: 9
+2023-03-04 05:24:00,521 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-04 05:24:00,887 INFO    Thread-13 :23188 [dir_watcher.py:_on_file_modified():292] file/dir modified: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:24:01,889 INFO    wandb-upload_0:23188 [upload_job.py:push():96] Uploaded file /root/.local/share/wandb/artifacts/staging/tmpzhdni87u
+2023-03-04 05:24:01,931 INFO    wandb-upload_1:23188 [upload_job.py:push():96] Uploaded file /root/.local/share/wandb/artifacts/staging/tmpoya9hfz_
+2023-03-04 05:24:03,508 INFO    SenderThread:23188 [sender.py:send_artifact():1417] sent artifact job-https___github.com_ismail31416_gradient_main.py - {'id': 'QXJ0aWZhY3Q6Mzg3OTcyNzgy', 'digest': '4772987f829ec4b6f06eb2d62e11783f', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU1NzIwOTU4', 'latestArtifact': None}, 'version': 'latest'}
+2023-03-04 05:24:03,508 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: defer
+2023-03-04 05:24:03,508 INFO    SenderThread:23188 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-03-04 05:24:03,508 INFO    SenderThread:23188 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-03-04 05:24:03,889 INFO    SenderThread:23188 [dir_watcher.py:finish():392] scan: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files
+2023-03-04 05:24:03,890 INFO    SenderThread:23188 [dir_watcher.py:finish():406] scan save: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/config.yaml config.yaml
+2023-03-04 05:24:03,891 INFO    SenderThread:23188 [dir_watcher.py:finish():406] scan save: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/wandb-summary.json wandb-summary.json
+2023-03-04 05:24:03,895 INFO    SenderThread:23188 [dir_watcher.py:finish():406] scan save: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/requirements.txt requirements.txt
+2023-03-04 05:24:03,898 INFO    SenderThread:23188 [dir_watcher.py:finish():406] scan save: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/wandb-metadata.json wandb-metadata.json
+2023-03-04 05:24:03,898 INFO    SenderThread:23188 [dir_watcher.py:finish():406] scan save: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log output.log
+2023-03-04 05:24:03,902 INFO    SenderThread:23188 [sender.py:transition_state():587] send defer: 10
+2023-03-04 05:24:03,902 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: poll_exit
+2023-03-04 05:24:03,903 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: defer
+2023-03-04 05:24:03,905 INFO    HandlerThread:23188 [handler.py:handle_request_defer():170] handle defer: 10
+2023-03-04 05:24:03,906 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: defer
+2023-03-04 05:24:03,906 INFO    SenderThread:23188 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-03-04 05:24:03,906 INFO    SenderThread:23188 [file_pusher.py:finish():162] shutting down file pusher
+2023-03-04 05:24:04,516 INFO    wandb-upload_0:23188 [upload_job.py:push():138] Uploaded file /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/config.yaml
+2023-03-04 05:24:04,532 INFO    wandb-upload_2:23188 [upload_job.py:push():138] Uploaded file /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/requirements.txt
+2023-03-04 05:24:04,550 INFO    wandb-upload_1:23188 [upload_job.py:push():138] Uploaded file /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/wandb-summary.json
+2023-03-04 05:24:04,564 INFO    wandb-upload_3:23188 [upload_job.py:push():138] Uploaded file /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/files/output.log
+2023-03-04 05:24:04,764 INFO    Thread-12 :23188 [sender.py:transition_state():587] send defer: 11
+2023-03-04 05:24:04,765 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: defer
+2023-03-04 05:24:04,765 INFO    HandlerThread:23188 [handler.py:handle_request_defer():170] handle defer: 11
+2023-03-04 05:24:04,766 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: defer
+2023-03-04 05:24:04,766 INFO    SenderThread:23188 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-03-04 05:24:04,766 INFO    SenderThread:23188 [file_pusher.py:join():167] waiting for file pusher
+2023-03-04 05:24:04,766 INFO    SenderThread:23188 [sender.py:transition_state():587] send defer: 12
+2023-03-04 05:24:04,766 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: defer
+2023-03-04 05:24:04,767 INFO    HandlerThread:23188 [handler.py:handle_request_defer():170] handle defer: 12
+2023-03-04 05:24:04,767 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: defer
+2023-03-04 05:24:04,767 INFO    SenderThread:23188 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-03-04 05:24:05,262 INFO    SenderThread:23188 [sender.py:transition_state():587] send defer: 13
+2023-03-04 05:24:05,263 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: defer
+2023-03-04 05:24:05,263 INFO    HandlerThread:23188 [handler.py:handle_request_defer():170] handle defer: 13
+2023-03-04 05:24:05,264 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: defer
+2023-03-04 05:24:05,264 INFO    SenderThread:23188 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-03-04 05:24:05,264 INFO    SenderThread:23188 [sender.py:transition_state():587] send defer: 14
+2023-03-04 05:24:05,265 DEBUG   SenderThread:23188 [sender.py:send():336] send: final
+2023-03-04 05:24:05,265 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: defer
+2023-03-04 05:24:05,265 DEBUG   SenderThread:23188 [sender.py:send():336] send: footer
+2023-03-04 05:24:05,265 INFO    HandlerThread:23188 [handler.py:handle_request_defer():170] handle defer: 14
+2023-03-04 05:24:05,265 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: defer
+2023-03-04 05:24:05,266 INFO    SenderThread:23188 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-03-04 05:24:05,266 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-04 05:24:05,267 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: server_info
+2023-03-04 05:24:05,267 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: get_summary
+2023-03-04 05:24:05,267 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: poll_exit
+2023-03-04 05:24:05,268 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: sampled_history
+2023-03-04 05:24:05,268 DEBUG   SenderThread:23188 [sender.py:send_request():363] send_request: server_info
+2023-03-04 05:24:05,502 INFO    MainThread:23188 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-04 05:24:05,502 INFO    MainThread:23188 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-04 05:24:05,503 INFO    MainThread:23188 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-03-04 05:24:05,503 DEBUG   HandlerThread:23188 [handler.py:handle_request():144] handle_request: shutdown
+2023-03-04 05:24:05,503 INFO    HandlerThread:23188 [handler.py:finish():841] shutting down handler
+2023-03-04 05:24:06,268 INFO    WriterThread:23188 [datastore.py:close():299] close: /content/drive/MyDrive/gradient/wandb/run-20230304_052245-pvgnye87/run-pvgnye87.wandb
+2023-03-04 05:24:06,502 INFO    SenderThread:23188 [sender.py:finish():1493] shutting down sender
+2023-03-04 05:24:06,503 INFO    SenderThread:23188 [file_pusher.py:finish():162] shutting down file pusher
+2023-03-04 05:24:06,503 INFO    SenderThread:23188 [file_pusher.py:join():167] waiting for file pusher

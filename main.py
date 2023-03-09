@@ -25,6 +25,8 @@ import torchvision.models as models
 from my_loss_function import loss_label_smoothing, loss_kd_regularization, loss_kd, loss_kd_self
 from train_kd import train_and_evaluate, train_and_evaluate_kd
 
+import wandb
+import random
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--model_dir', default='experiments/base_experiments/base_resnet18/', help="Directory containing params.json")
@@ -68,6 +70,23 @@ def main():
     dev_dl = data_loader.fetch_dataloader('dev', params)
 
     logging.info("- done.")
+
+    #wandb settings 
+    # start a new wandb run to track this script
+    wandb.init(
+      # set the wandb project where this run will be logged
+      project= "Gradient",
+      entity="mahimaahsan",
+      name=f"02/08-base_mobilenetv2 ",
+      
+      # track hyperparameters and run metadata
+      config={
+      "architecture": "Mobilenetv2",
+      "dataset": "Cifar100",
+      "epochs": 200,
+      "batches": 391
+      }
+    )
 
     """
     Load student and teacher model

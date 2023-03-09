@@ -15,6 +15,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+import wandb
+import random
+
 
 def loss_fn_kd(outputs, labels, teacher_outputs):
     """
@@ -32,8 +35,8 @@ def loss_fn_kd(outputs, labels, teacher_outputs):
 def tp(arr,s,l):
   n = len(arr)
   # find the 20% index number (round down to the nearest integer)
-  index = int(n * .05)
-  index2 = int(n * .10)
+  index = int(n * .02)
+  index2 = int(n * .08)
   # find the first "index" number of least values
   least_values = heapq.nsmallest(index, arr)
   g_values = heapq.nlargest(index2, arr)
@@ -53,6 +56,7 @@ def train_and_evaluate_kd(model, teacher_model, train_dataloader, val_dataloader
         restore_path = os.path.join(args.model_dir, args.restore_file + '.pth.tar')
         logging.info("Restoring parameters from {}".format(restore_path))
         utils.load_checkpoint(restore_path, model, optimizer)
+
 
     # tensorboard setting
     log_dir = args.model_dir + '/tensorboard/'
@@ -98,6 +102,10 @@ def train_and_evaluate_kd(model, teacher_model, train_dataloader, val_dataloader
         # Save latest val metrics in a json file in the model directory
         last_json_path = os.path.join(args.model_dir, "eval_last_result.json")
         utils.save_dict_to_json(val_metrics, last_json_path)
+
+        # WandB 
+        wandb.log({"Training_accuracy": train_acc, "Train_loss": train_loss})
+        wandb.log({"Test_accuracy": val_metrics['accuracy'], "Test_loss": val_metrics['loss']})
 
         # Tensorboard
         writer.add_scalar('Train_accuracy', train_acc, epoch)
@@ -187,9 +195,9 @@ def train_and_evaluate(model, train_dataloader, val_dataloader, optimizer,
     best_val_acc = 0.0
     import copy
     ind = []
-    teacher_model = copy.deepcopy(model)
-    restore_path = os.path.join(args.model_dir,  'teacher' + '.pth.tar')
-    utils.load_checkpoint(restore_path, teacher_model, optimizer)
+    teacher_model = model#copy.deepcopy(model)
+    #restore_path = os.path.join(args.model_dir,  'teacher' + '.pth.tar')
+    #utils.load_checkpoint(restore_path, teacher_model, optimizer)
     # learning rate schedulers
     scheduler = MultiStepLR(optimizer, milestones=[60, 120, 160], gamma=0.2)
     val = []
@@ -247,6 +255,10 @@ def train_and_evaluate(model, train_dataloader, val_dataloader, optimizer,
         last_json_path = os.path.join(model_dir, "eval_last_results.json")
         utils.save_dict_to_json(val_metrics, last_json_path)
 
+        # WandB 
+        wandb.log({"Training_accuracy": train_acc, "Train_loss": train_loss})
+        wandb.log({"Test_accuracy": val_metrics['accuracy'], "Test_loss": val_metrics['loss']})
+
         # Tensorboard
         writer.add_scalar('Train_accuracy', train_acc, epoch)
         writer.add_scalar('Train_loss', train_loss, epoch)
@@ -303,7 +315,7 @@ def train(model, optimizer, loss_fn, dataloader,ind, params,teacher_model, epoch
 
 
             else:
-                
+                if i not in ind:
                    
                     optimizer.zero_grad()
                     loss.backward()

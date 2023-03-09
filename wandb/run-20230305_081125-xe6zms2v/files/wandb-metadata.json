@@ -1,0 +1,41 @@
+{
+    "os": "Linux-5.10.147+-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-03-05T08:11:31.570732",
+    "startedAt": "2023-03-05T08:11:25.915110",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--model_dir",
+        "experiments/base_experiments/base_mobilenetv2/"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/ismail31416/gradient",
+        "commit": "3f5c46fc911849bfbd08d34082a542d292953c1c"
+    },
+    "email": null,
+    "root": "/content/drive/MyDrive/gradient",
+    "host": "1a1faa305a5c",
+    "username": "root",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "disk": {
+        "total": 166.77415084838867,
+        "used": 25.78023910522461
+    },
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla T4",
+            "memory_total": 16106127360
+        }
+    ],
+    "memory": {
+        "total": 51.00005340576172
+    }
+}
